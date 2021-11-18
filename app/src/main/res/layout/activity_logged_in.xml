@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoggedIn"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Welcome"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+            </TextView>
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Name: Demo Name"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Phone: Demo Phone"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp">
+            </TextView>
+            <TextView
+                android:id="@+id/EmailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Email: Demo Email"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp">
+            </TextView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:backgroundTint="#F75522"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp" />
+</LinearLayout>
